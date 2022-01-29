@@ -1,0 +1,20 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.nav-barra {
+ display:flex;
+ flex-direction: column;
+ @include m.tablet {
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .logo {
+   align-items: center;
+   font-size: 5rem; // 5 o 6
+   font-family: v.$fontCursive ;
+   color: v.$white;
+   font-weight: 700;
+
+ }
+}
